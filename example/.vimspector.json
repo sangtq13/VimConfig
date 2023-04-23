@@ -1,0 +1,40 @@
+{
+  "configurations": {
+    "Launch": {
+      "adapter": "CodeLLDB",
+			"filetypes": [ "cpp", "c", "objc", "rust" ],
+      "configuration": {
+        "request": "launch",
+				"type": "lldb",
+        "program": "${workspaceRoot}/test",
+        "args": [],
+        "cwd": "${workspaceRoot}",
+        "environment": [],
+	      "externalConsole": false,
+	      "stopAtEntry": false,
+        "stopOnEntry": false,
+        "MIMode": "lldb"		
+      },
+      "breakpoints": {
+        "exception": {
+          "all": "",
+          "cpp_catch": "",
+          "cpp_throw": "",
+          "objc_catch": "",
+          "objc_throw": "",
+          "swift_catch": "",
+          "swift_throw": ""
+        }
+      }
+    },
+    "Attach": {
+      "adapter": "CodeLLDB",
+      "filetypes": [ "cpp", "c", "objc", "rust" ],
+      "configuration": {
+        "request": "attach",
+        "program": "${workspaceRoot}/test",
+        "MIMode": "lldb"
+      }
+    }
+  }
+}
